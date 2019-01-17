@@ -10,6 +10,10 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background-color: @body-color;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Indie Flower', cursive;
 }
@@ -43,4 +47,24 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  @media @mobile {
+    padding: 20px;
+  }
+}
+
+.container-two {
+  width: 100%;
+  @media @mobile {
+    padding: 20px;
+  }
+}
+
+.wrap-content {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: @white;
+  border: 1px solid black;
+  @media @mobile {
+    padding: 20px;
+  }
 }
