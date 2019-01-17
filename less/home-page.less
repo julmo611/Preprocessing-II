@@ -42,21 +42,24 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-    @media @mobile {
-      display: flex;
-      flex-wrap: wrap-reverse;
-         
-    }
+  
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-          
+      @media @mobile {
+        order: 1;           
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-      order: 1;
+      @media @mobile {
+        order:2;
+       
+           
+      }
+      
     }
    
   }
