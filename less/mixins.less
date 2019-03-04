@@ -1,1 +1,27 @@
 // Mixins in here
+
+.custom-btn(@width: 90%, @font-color: black) {
+    width: @width;
+    background-color: @eastern-blue;
+    color: @white;
+    margin: 20px auto;
+    padding: 10px 20px;
+    .border-radius();
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.6rem;
+    
+        &:hover {
+      background-color: lighten(@eastern-blue, 15%);
+      color: @shark;
+    }
+  }
+
+.border-radius (@radius: 10px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+}
+
+
+
